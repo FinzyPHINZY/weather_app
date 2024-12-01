@@ -20,12 +20,12 @@ let updateWeather = (data) => {
 
   // update img and icons
 
-  const iconsrc = `${window.location.origin}/img/icons/${weather.WeatherIcon}.svg`;
+  const iconsrc = `../img/icons/${weather.WeatherIcon}.svg`;
   icon.setAttribute('src', iconsrc);
 
   let weatherResult = weather.IsDayTime
-    ? img.setAttribute('src', '${window.location.origin}/img/day.svg')
-    : img.setAttribute('src', '${window.location.origin}/img/night.svg');
+    ? img.setAttribute('src', '../img/day.svg')
+    : img.setAttribute('src', '../img/night.svg');
 
   // remove display none on card remove it
 
